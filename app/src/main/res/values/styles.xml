@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#fe2952</item>
+        <item name="colorPrimaryDark">#fe2952</item>
+        <item name="colorAccent">#fe2952</item>
+    </style>
+
+    <style name="cardViewMenu" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#fff</item>
+        <item name="cardCornerRadius">5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+
+    <style name="cardViewShare" parent="AppTheme">
+        <item name="android:layout_width">115dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:background">#fff</item>
+        <item name="cardCornerRadius">5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+
+    <style name="cardViewPlay" parent="AppTheme">
+        <item name="android:colorBackground">#fe2952</item>
+        <item name="cardCornerRadius">5dp</item>
+    </style>
+
+    <style name="cardViewLinearLayout" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="shareCardViewLinearLayout" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">7dp</item>
+    </style>
+
+    <style name="iconCardViewMenu" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <!--not used-->
+    <style name="textCardViewMenu" parent="AppTheme">
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">Nunito</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cardViewText</item>
+    </style>
+
+    <!-- CardView Playing ImageView-->
+    <style name="CardViewImagePlaying">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- Scale image, keep aspect ratio, fill view -->
+        <item name="android:scaleType">centerCrop</item>
+        <!-- Adjust ImageView bounds to preserve aspect ratio-->
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+</resources>

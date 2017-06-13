@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainBackground"
+    tools:context="com.example.android.listenny.Play">
+
+    <include
+        android:id="@+id/expand_more"
+        layout="@layout/share" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/my_action_bar"
+        android:layout_below="@+id/expand_more">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/play_main_margin_sides"
+            android:layout_marginRight="@dimen/play_main_margin_sides"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_playing_card"
+                style="@style/cardViewMenu"
+                android:layout_height="@dimen/play_mainCardView_height"
+                android:layout_marginBottom="@dimen/play_mainCardView_marginBottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:padding="@dimen/play_sideIcon_padding"
+                            android:src="@drawable/ic_settings_black_24dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:padding="@dimen/play_sideIcon_padding"
+                            android:src="@drawable/ic_previous_black_24dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:padding="@dimen/play_sideIcon_padding"
+                            android:src="@drawable/ic_equaliser_black_24dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/pause_button"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:src="@drawable/play_image" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:padding="@dimen/play_sideIcon_padding"
+                            android:src="@drawable/ic_favorite_border_black_24dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:padding="@dimen/play_sideIcon_padding"
+                            android:src="@drawable/ic_next_black_24dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_weight="1"
+                            android:padding="@dimen/play_sideIcon_padding"
+                            android:src="@drawable/ic_follow_black_24dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="Nunito"
+                android:gravity="center"
+                android:text="@string/play_artist_name"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/play_time_seekBar_sidePadding"
+                android:paddingRight="@dimen/play_time_seekBar_sidePadding">
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:text="@string/play_startingTime"
+                    android:textColor="@color/playing_time"
+                    android:textSize="@dimen/play_playing_time_text" />
+
+                <SeekBar
+                    android:id="@+id/simpleSeekBar"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:max="200"
+                    android:progress="50" />
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:text="@string/play_timeEnd"
+                    android:textSize="@dimen/play_playing_time_text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/play_songName_paddingBottom"
+                android:fontFamily="Nunito"
+                android:gravity="center"
+                android:text="Song Name Lorem Ipsum"
+                android:textSize="@dimen/play_playing_song_textSize" />
+
+            <include layout="@layout/recent_songs" />
+
+            <include layout="@layout/recent_songs" />
+
+            <include layout="@layout/recent_songs" />
+
+            <include layout="@layout/recent_songs" />
+
+            <include layout="@layout/recent_songs" />
+
+            <include layout="@layout/recent_songs" />
+
+            <include layout="@layout/description_recent_layout" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/action_bar" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fe2952</color>
+    <color name="primary_color">#fe2952</color>
+    <color name="colorPrimaryDark">#fe2952</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mainBackground">#FAFAFA</color>
+    <color name="playingSong">#302f31</color>
+    <color name="cardViewText">#FF4081</color>
+    <color name="main_background">#fafafa</color>
+    <color name="playing_time">#9362f9</color>
+
+
+
+
+</resources>
